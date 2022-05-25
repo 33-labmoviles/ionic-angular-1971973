@@ -1,0 +1,37 @@
+<ion-content>
+  <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Nueva Persona
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" ngNativeValidate>
+<ion-grid>
+  <ion-row>
+    Ingrese un nombre:
+    <ion-col>
+      <ion-input placeholder="Ejemplo: Perrillo meme" [(ngModel)]="newnombre" name="name" required>{{newpersona.nombre}}</ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    Ingrese un apellido:
+    <ion-col>
+      <ion-input placeholder="Ejemplo: Cortez" [(ngModel)]="newapellidos" name="lastname" required>{{newpersona.apellidos}}</ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    Ingrese un matricula:
+    <ion-col>
+      <ion-input placeholder="Ejemplo: 123456"  [(ngModel)]="newmatricula" name="mat" required>{{newpersona.matricula}}</ion-input>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-button type="submit">Agregar Persona</ion-button>
+</form>
+
+</ion-content>
