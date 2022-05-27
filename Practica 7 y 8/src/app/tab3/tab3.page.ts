@@ -18,7 +18,7 @@ export class Tab3Page {
     var newpersona = 
       {
         "apellidos": this.newapellidos,
-        "image": "assets/images/pic.png",
+        "image": "assets/images/giga.png",
         "matricula": this.newmatricula,
         "nombre": this.newnombre
       };
